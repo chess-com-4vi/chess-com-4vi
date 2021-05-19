@@ -1,0 +1,33 @@
+{
+  "name": "chess-com-4vi",
+  "version": "1.0.0",
+  "description": "Visually impaired chrome extension for chess.com",
+  "main": "index.jsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --ext .js,.jsx",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "author": "Fabian Trevino",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.2",
+    "@babel/preset-react": "^7.13.13",
+    "babel-loader": "^8.2.2",
+    "eslint": "^7.26.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.23.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-webpack-plugin": "^2.5.4",
+    "webpack": "^5.37.0",
+    "webpack-cli": "^4.7.0"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
