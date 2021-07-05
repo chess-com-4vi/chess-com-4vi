@@ -23,8 +23,8 @@ module.exports = {
         }
       },
       {
-        test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, 'css-loader']
+        test: /\.s[ac]ss$/i,
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
       },
       {
         test: /\.(svg|eot|ttf|woff|woff2)$/,
@@ -36,5 +36,5 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx']
   },
-  devtool: 'cheap-module-source-map'
+  devtool: 'inline-source-map'
 }

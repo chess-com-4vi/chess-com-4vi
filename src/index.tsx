@@ -1,6 +1,7 @@
 import App from './components/app';
 import ReactDOM from 'react-dom';
 import React from 'react';
+import './styles.scss';
 
 const rootElementClass = 'chess-com-4vi-root';
 const rootElement = document.createElement('div');

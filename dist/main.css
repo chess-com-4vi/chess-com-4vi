@@ -1,69 +1,16 @@
-/*!*********************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/@fontsource/roboto/index.css ***!
-  \*********************************************************************************************/
-/* roboto-cyrillic-ext-400-normal*/
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-  src: url(fonts/roboto-cyrillic-ext-400-normal.woff2) format('woff2'), url(fonts/roboto-all-400-normal.woff) format('woff');
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+/*!**********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles.scss ***!
+  \**********************************************************************************************************/
+#c4vi-root-container {
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-size: 20px;
 }
-/* roboto-cyrillic-400-normal*/
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-  src: url(fonts/roboto-cyrillic-400-normal.woff2) format('woff2'), url(fonts/roboto-all-400-normal.woff) format('woff');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* roboto-greek-ext-400-normal*/
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-  src: url(fonts/roboto-greek-ext-400-normal.woff2) format('woff2'), url(fonts/roboto-all-400-normal.woff) format('woff');
-  unicode-range: U+1F00-1FFF;
-}
-/* roboto-greek-400-normal*/
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-  src: url(fonts/roboto-greek-400-normal.woff2) format('woff2'), url(fonts/roboto-all-400-normal.woff) format('woff');
-  unicode-range: U+0370-03FF;
-}
-/* roboto-vietnamese-400-normal*/
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-  src: url(fonts/roboto-vietnamese-400-normal.woff2) format('woff2'), url(fonts/roboto-all-400-normal.woff) format('woff');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-/* roboto-latin-ext-400-normal*/
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-  src: url(fonts/roboto-latin-ext-400-normal.woff2) format('woff2'), url(fonts/roboto-all-400-normal.woff) format('woff');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* roboto-latin-400-normal*/
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-  src: url(fonts/roboto-latin-400-normal.woff2) format('woff2'), url(fonts/roboto-all-400-normal.woff) format('woff');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+#c4vi-root-container #c4vi-command-bar {
+  width: 100%;
+  font-size: inherit;
 }
 
-
-/*# sourceMappingURL=main.css.map*/
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9jaGVzcy1jb20tNHZpLy4vc3JjL3N0eWxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtBQUNGO0FBQ0k7RUFDRTtDQUNBO0FBQ04iLCJmaWxlIjoibWFpbi5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIjYzR2aS1yb290LWNvbnRhaW5lcntcbiAgYmFja2dyb3VuZC1jb2xvcjogZ3JheTtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIHBhZGRpbmc6IDEwcHg7XG4gIGZvbnQtc2l6ZTogMjBweDtcblxuICAgICNjNHZpLWNvbW1hbmQtYmFyIHtcbiAgICAgIHdpZHRoOiAxMDAlO1xuICAgICAgZm9udC1zaXplOiBpbmhlcml0O1xuICAgIH1cbn0iXSwic291cmNlUm9vdCI6IiJ9*/

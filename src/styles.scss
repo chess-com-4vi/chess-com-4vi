@@ -1,0 +1,12 @@
+#c4vi-root-container{
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-size: 20px;
+
+    #c4vi-command-bar {
+      width: 100%;
+      font-size: inherit;
+    }
+}

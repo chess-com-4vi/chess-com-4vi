@@ -1,11 +1,12 @@
 import React from 'react';
-import '@fontsource/roboto';
-import { Button } from '@material-ui/core';
+import { CommandBar } from './commandBar';
 
 function App () {
   return (
-    <Button color="primary">Hello World</Button>
-  );
+    <section id='c4vi-root-container'>
+      <CommandBar />
+    </section>
+  );    
 }
 
 export default App;

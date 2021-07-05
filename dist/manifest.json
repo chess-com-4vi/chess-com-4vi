@@ -11,6 +11,7 @@
   "content_scripts": [{
     "matches": ["*://www.chess.com/play/online*"],
     "run_at": "document_idle",
-    "js": ["main.js"]
+    "js": ["main.js"],
+    "css": ["main.css"]
   }]
 }
