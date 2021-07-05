@@ -1,11 +1,10 @@
-import React from 'react'
-import { Typography } from '@material-ui/core';
+import React from 'react';
+import '@fontsource/roboto';
+import { Button } from '@material-ui/core';
 
 function App () {
   return (
-    <Typography variant="h1" component="h2">
-      h1. Heading
-    </Typography>   
+    <Button color="primary">Hello World</Button>
   );
 }
 
