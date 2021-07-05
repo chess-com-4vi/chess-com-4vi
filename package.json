@@ -5,7 +5,8 @@
   "main": "index.jsx",
   "scripts": {
     "lint": "eslint --ext .ts,.tsx",
-    "build": "npm run lint && webpack"
+    "build": "npm run lint && webpack",
+    "test": "jest"
   },
   "author": "Fabian Trevino",
   "license": "MIT",
@@ -14,6 +15,7 @@
     "@babel/preset-env": "^7.14.2",
     "@babel/preset-react": "^7.13.13",
     "@babel/preset-typescript": "^7.14.5",
+    "@types/jest": "^26.0.23",
     "@types/react": "^17.0.13",
     "@types/react-dom": "^17.0.8",
     "babel-loader": "^8.2.2",
@@ -26,7 +28,10 @@
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-react": "^7.23.2",
     "file-loader": "^6.2.0",
+    "jest": "^27.0.6",
     "mini-css-extract-plugin": "^2.1.0",
+    "ts-jest": "^27.0.3",
+    "ts-node": "^10.0.0",
     "typescript": "^4.3.5",
     "webpack": "^5.37.0",
     "webpack-cli": "^4.7.0"
