@@ -4,9 +4,8 @@
   "description": "Visually impaired chrome extension for chess.com",
   "main": "index.jsx",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint --ext .js,.jsx",
-    "lint:fix": "npm run lint -- --fix"
+    "lint": "eslint --ext .ts,.tsx",
+    "build": "npm run lint && webpack"
   },
   "author": "Fabian Trevino",
   "license": "MIT",
@@ -14,7 +13,11 @@
     "@babel/core": "^7.14.3",
     "@babel/preset-env": "^7.14.2",
     "@babel/preset-react": "^7.13.13",
+    "@babel/preset-typescript": "^7.14.5",
+    "@types/react": "^17.0.13",
+    "@types/react-dom": "^17.0.8",
     "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.6",
     "eslint": "^7.26.0",
     "eslint-config-standard": "^16.0.2",
     "eslint-loader": "^4.0.2",
@@ -22,11 +25,14 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-react": "^7.23.2",
-    "eslint-webpack-plugin": "^2.5.4",
+    "file-loader": "^6.2.0",
+    "typescript": "^4.3.5",
     "webpack": "^5.37.0",
     "webpack-cli": "^4.7.0"
   },
   "dependencies": {
+    "@fontsource/roboto": "^4.4.5",
+    "@material-ui/core": "^4.11.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   }

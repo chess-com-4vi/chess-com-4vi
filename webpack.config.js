@@ -1,34 +1,38 @@
 const path = require('path')
-const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = {
-  mode: "production",
-  entry: path.resolve(__dirname, 'src', 'index.jsx'),
+  mode: 'development',
+  entry: path.resolve(__dirname, 'src', 'index.tsx'),
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'main.js'
   },
-  plugins: [new ESLintPlugin({
-    files: 'src/**/*',
-    extensions: ['js', 'jsx'],
-    fix: true
-  })],
   module: {
     rules: [
       {
-        test: /\.m?js|jsx$/,
+        test: /\.m?ts|tsx$/,
         exclude: /(node_modules|bower_components)/,
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env', '@babel/preset-react'],
+            presets: ['@babel/preset-env', '@babel/preset-react', '@babel/preset-typescript'],
             plugins: ['@babel/plugin-proposal-object-rest-spread']
           }
         }
+      },
+      {
+        test: /\.css$/i,
+        use: ['css-loader']
+      },
+      {
+        test: /\.(svg|eot|ttf|woff|woff2)$/,
+        loader: 'file-loader',
+        options: { name: '[name].[ext]', outputPath: 'fonts/' }
       }
     ]
   },
   resolve: {
-    extensions: ['', '.js', '.jsx'],
+    extensions: ['.ts', '.tsx', '.js', '.jsx']
   },
+  devtool: 'cheap-module-source-map'
 }
