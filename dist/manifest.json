@@ -9,7 +9,10 @@
     "128": "./assets/images/icon-128.png"
   },
   "content_scripts": [{
-    "matches": ["*://www.chess.com/play/online*"],
+    "matches": [
+      "*://www.chess.com/play/online*",
+      "*://www.chess.com/play/computer*"
+    ],
     "run_at": "document_idle",
     "js": ["main.js"],
     "css": ["main.css"]
